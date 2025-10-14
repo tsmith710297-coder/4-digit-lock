@@ -1,0 +1,16 @@
+
+<input id="codeInput" type="text" maxlength="4" placeholder="Enter 4-digit code">
+<button id="unlockBtn">Unlock</button>
+<div id="message" style="display:none;">🎉 Correct!   https://youtu.be/Kjr7US2Z9aY?list=RDKjr7US2Z9aY&t=129  ,Great Job honey.</div>
+
+<script>
+  const correctCode = "6741";
+  document.getElementById('unlockBtn').addEventListener('click', () => {
+    const enteredCode = document.getElementById('codeInput').value;
+    if (enteredCode === correctCode) {
+      document.getElementById('message').style.display = 'block';
+    } else {
+      alert("Incorrect! Try again babe.");
+    }
+  });
+</script>
